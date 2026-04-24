@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUVRAJ VISUALS | Retention Expert</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: "#080808", 
+                        panel: "#121212", 
+                        volt: "#CEFF00", 
+                        crimson: "#FF003C", 
+                    },
+                    fontFamily: {
+                        heading: ['"Bebas Neue"', 'sans-serif'],
+                        body: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    animation: {
+                        'marquee': 'marquee 15s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #080808;
+            color: #FFFFFF;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+            /* Modern Tech Grid Background */
+            background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .heading-font { font-family: 'Bebas Neue', sans-serif; }
+
+        /* True Modern Brutalism Forms */
+        .brutal-card {
+            background-color: #121212;
+            border: 3px solid #333;
+            box-shadow: 6px 6px 0px 0px #222;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .bento-card:hover {
+            border-color: #CEFF00;
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px 0px #CEFF00;
+        }
+
+        .bento-card.crimson-hover:hover {
+            border-color: #FF003C;
+            box-shadow: 12px 12px 0px 0px #FF003C;
+        }
+
+        /* 3D Button Press Effect */
+        .brutal-btn {
+            border: 3px solid #fff;
+            box-shadow: 6px 6px 0px 0px #fff;
+            transition: all 0.15s ease;
+        }
+        .brutal-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px 0px #fff;
+        }
+        .brutal-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px 0px #fff;
+        }
+
+        .brutal-btn-volt { border-color: #CEFF00; box-shadow: 6px 6px 0px 0px #CEFF00; }
+        .brutal-btn-volt:hover { box-shadow: 8px 8px 0px 0px #CEFF00; }
+        
+        .text-stroke {
+            -webkit-text-stroke: 2px #CEFF00;
+            color: transparent;
+            text-shadow: 4px 4px 0px rgba(206, 255, 0, 0.2);
+        }
+
+        /* Spring Animation for Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        video::-webkit-media-controls { display:none !important; }
+        .showcase-video { background: #000; }
+        
+        /* Noise Overlay for Images */
+        .img-noise {
+            position: relative;
+        }
+        .img-noise::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.15;
+            mix-blend-mode: overlay;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="selection:bg-volt selection:text-black uppercase">
+
+    <nav class="fixed w-full top-0 z-50 bg-base/90 backdrop-blur-md border-b-4 border-volt px-4 md:px-8 py-4 flex justify-between items-center">
+        <div class="heading-font text-3xl md:text-5xl tracking-tighter">
+            <span class="text-volt drop-shadow-[2px_2px_0px_#FF003C]">YUVRAJ</span>VISUALS
+        </div>
+        <a href="#deploy" class="bg-white text-black heading-font text-xl md:text-2xl px-6 py-2 brutal-btn hover:bg-volt hover:text-black hover:border-volt">
+            CONTACT
+        </a>
+    </nav>
+
+    <section class="min-h-screen flex items-center px-6 pt-32 md:pt-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+            <div class="reveal active">
+                <div class="inline-block border-2 border-crimson px-3 py-1 mb-4 bg-crimson/10">
+                    <h2 class="heading-font text-xl md:text-2xl text-crimson tracking-[0.2em] m-0">Lead Editor</h2>
+                </div>
+                <h1 class="heading-font text-[70px] sm:text-[100px] md:text-[150px] leading-[0.8] mb-8">
+                    I CRUSH <br> <span class="text-stroke">RETENTION</span> <br> WARS.
+                </h1>
+                <p class="max-w-md text-gray-300 font-light normal-case text-lg md:text-xl mb-10 border-l-4 border-volt pl-6 leading-relaxed bg-gradient-to-r from-white/5 to-transparent py-2">
+                    Stopping the scroll isn't enough. I keep them hooked until the last second. Pacing that spikes your AVD.
+                </p>
+                <a href="#arsenal" class="bg-volt text-black border-none heading-font text-3xl md:text-4xl px-12 py-4 inline-block brutal-btn brutal-btn-volt hover:bg-white hover:text-black">
+                    VIEW ARSENAL ↓
+                </a>
+            </div>
+            
+            <div class="relative reveal active delay-200 w-full max-w-md mx-auto md:ml-auto">
+                <div class="border-[8px] md:border-[12px] border-white bg-white p-2 transform rotate-2 hover:rotate-0 transition-transform duration-300 shadow-[15px_15px_0px_#CEFF00]">
+                    <div class="img-noise h-full w-full">
+                        <img src="my_img.png" 
+                             class="grayscale contrast-125 brightness-90 w-full object-cover aspect-[4/5]" 
+                             alt="Yuvraj - Retention Expert"
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80';">
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8 bg-crimson text-white heading-font text-3xl md:text-5xl px-6 py-3 border-4 border-black shadow-[8px_8px_0px_#000] rotate-[-5deg] hover:rotate-0 transition-transform">
+                    RETENTION KING
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-volt py-4 border-y-8 border-black overflow-hidden flex relative z-10">
+        <div class="flex gap-12 whitespace-nowrap heading-font text-3xl md:text-5xl text-black animate-marquee">
+            <span>50M+ VIEWS</span> <span>✦</span> <span>HIGH CTR THUMBNAILS</span> <span>✦</span>
+            <span>PREMIERE PRO BEAST</span> <span>✦</span> <span>HIGH OCTANE PACING</span> <span>✦</span>
+            <span>50M+ VIEWS</span> <span>✦</span> <span>HIGH CTR THUMBNAILS</span> <span>✦</span>
+            <span>PREMIERE PRO BEAST</span> <span>✦</span> <span>HIGH OCTANE PACING</span> <span>✦</span>
+        </div>
+    </div>
+
+    <section id="arsenal" class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+        <h2 class="heading-font text-6xl md:text-8xl mb-16 inline-block border-b-8 border-crimson pb-2">THE ARSENAL</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="brutal-card bento-card p-3 reveal bg-white/5 backdrop-blur-sm">
+                <div class="relative aspect-video overflow-hidden border-2 border-black img-noise">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/15/12/02/editing-1141505_1280.jpg" 
+                         class="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500"
+                         alt="Documentary Portfolio">
+                    <div class="absolute top-4 left-4 bg-black text-volt heading-font px-4 py-2 text-xl md:text-2xl border-2 border-volt">14.2% CTR</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="heading-font text-4xl md:text-5xl mb-2 text-white">Long Form Documentary</h3>
+                    <p class="text-volt font-bold text-sm tracking-widest normal-case uppercase">Full Story Pacing & Motion Graphics</p>
+                </div>
+            </div>
+
+            <div class="brutal-card bento-card p-3 reveal delay-100 bg-white/5 backdrop-blur-sm">
+                <div class="relative aspect-video overflow-hidden border-2 border-black img-noise">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80" 
+                         class="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-110 transition-all duration-500">
+                    <div class="absolute top-4 left-4 bg-black text-volt heading-font px-4 py-2 text-xl md:text-2xl border-2 border-volt">Gaming Edits</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="heading-font text-4xl md:text-5xl mb-2 text-white">High-Octane Gameplay</h3>
+                    <p class="text-volt font-bold text-sm tracking-widest normal-case uppercase">Fast Cut, Visual Hooks, SFX Heavy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 bg-panel border-y-4 border-white/20 relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="heading-font text-6xl md:text-8xl mb-16 inline-block border-b-8 border-volt pb-2">RETENTION SHOWCASE</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 bento-grid">
+                <div class="brutal-card bento-card p-0 overflow-hidden reveal aspect-[9/16] relative group cursor-pointer border-4" oncontextmenu="return false;">
+                    <video loop playsinline preload="metadata" controlslist="nodownload noplaybackrate" class="w-full h-full object-cover showcase-video grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <source src="/g_video.mp4#t=0.001" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100"></div>
+                    <div class="absolute bottom-6 left-6 right-6 border-l-4 border-volt pl-4 transform group-hover:translate-x-2 transition-transform">
+                        <p class="heading-font text-white text-3xl md:text-4xl leading-none mb-1">HOOK</p>
+                        <p class="text-volt font-bold text-sm tracking-widest uppercase">Fast Pacing</p>
+                    </div>
+                </div>
+
+                <div class="brutal-card bento-card p-0 overflow-hidden reveal delay-100 aspect-[9/16] relative group cursor-pointer border-4" oncontextmenu="return false;">
+                    <video loop playsinline preload="metadata" controlslist="nodownload noplaybackrate" class="w-full h-full object-cover showcase-video grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <source src="/d_video.mp4#t=0.001" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100"></div>
+                    <div class="absolute bottom-6 left-6 right-6 border-l-4 border-volt pl-4 transform group-hover:translate-x-2 transition-transform">
+                        <p class="heading-font text-white text-3xl md:text-4xl leading-none mb-1">DOCUMENTARY</p>
+                        <p class="text-volt font-bold text-sm tracking-widest uppercase">EDIT</p>
+                    </div>
+                </div>
+
+                <div class="brutal-card bento-card p-0 overflow-hidden reveal delay-200 aspect-[9/16] relative group cursor-pointer border-4" oncontextmenu="return false;">
+                    <video loop playsinline preload="metadata" controlslist="nodownload noplaybackrate" class="w-full h-full object-cover showcase-video grayscale group-hover:grayscale-0 transition-all duration-500">
+                        <source src="/m_video.mp4" type="video/mp4">
+                    </video>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100"></div>
+                    <div class="absolute bottom-6 left-6 right-6 border-l-4 border-volt pl-4 transform group-hover:translate-x-2 transition-transform">
+                        <p class="heading-font text-white text-3xl md:text-4xl leading-none mb-1">SHORTS</p>
+                        <p class="text-volt font-bold text-sm tracking-widest uppercase">Viral motion graphics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+        <h2 class="heading-font text-6xl md:text-8xl mb-16 inline-block border-b-8 border-crimson pb-2">VIRAL THUMBNAILS</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 bento-grid">
+            <div class="brutal-card bento-card crimson-hover p-2 bg-white/5 reveal group aspect-video relative" oncontextmenu="return false;">
+                <div class="w-full h-full overflow-hidden border-2 border-black">
+                    <img src="/g_thumb.png" 
+                         class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" 
+                         alt="Thumb 1"
+                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&w=800&q=80';">
+                </div>
+                <div class="absolute -top-4 -left-4 bg-crimson text-white heading-font px-6 py-2 text-2xl md:text-3xl border-4 border-black shadow-[4px_4px_0px_#000] rotate-[-5deg] group-hover:rotate-0 transition-transform">18.1% CTR</div>
+            </div>
+
+            <div class="brutal-card bento-card crimson-hover p-2 bg-white/5 reveal delay-100 group aspect-video relative" oncontextmenu="return false;">
+                <div class="w-full h-full overflow-hidden border-2 border-black">
+                    <img src="/d_thumb.jpg" 
+                         class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" 
+                         alt="Thumb 2">
+                </div>
+                <div class="absolute -top-4 -left-4 bg-crimson text-white heading-font px-6 py-2 text-2xl md:text-3xl border-4 border-black shadow-[4px_4px_0px_#000] rotate-[-5deg] group-hover:rotate-0 transition-transform">12.4% CTR</div>
+            </div>
+
+            <div class="brutal-card bento-card crimson-hover p-2 bg-white/5 reveal delay-200 group aspect-video relative" oncontextmenu="return false;">
+                <div class="w-full h-full overflow-hidden border-2 border-black">
+                    <img src="/v_thumb.png" 
+                         class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110 group-hover:grayscale-0" 
+                         alt="Thumb 3">
+                </div>
+                <div class="absolute -top-4 -left-4 bg-crimson text-white heading-font px-6 py-2 text-2xl md:text-3xl border-4 border-black shadow-[4px_4px_0px_#000] rotate-[-5deg] group-hover:rotate-0 transition-transform">21.5% CTR</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 bg-panel border-y-4 border-white/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div class="reveal group">
+                <div class="text-transparent border-text heading-font text-7xl md:text-8xl mb-6" style="-webkit-text-stroke: 2px #CEFF00;">01</div>
+                <h3 class="heading-font text-4xl md:text-5xl mb-4 group-hover:text-volt transition-colors">Long Form</h3>
+                <p class="text-gray-400 normal-case leading-relaxed font-light text-lg">Documentaries/Essays hooked from start to finish. Full sound design & grading.</p>
+            </div>
+            <div class="reveal delay-100 group">
+                <div class="text-transparent border-text heading-font text-7xl md:text-8xl mb-6" style="-webkit-text-stroke: 2px #FF003C;">02</div>
+                <h3 class="heading-font text-4xl md:text-5xl mb-4 group-hover:text-crimson transition-colors">Short Form</h3>
+                <p class="text-gray-400 normal-case leading-relaxed font-light text-lg">TikToks/Reels with aggressive captions (Hormozi style) & visual loops.</p>
+            </div>
+            <div class="reveal delay-200 group">
+                <div class="text-transparent border-text heading-font text-7xl md:text-8xl mb-6" style="-webkit-text-stroke: 2px #FFFFFF;">03</div>
+                <h3 class="heading-font text-4xl md:text-5xl mb-4 group-hover:text-white transition-colors">CTR Graphics</h3>
+                <p class="text-gray-400 normal-case leading-relaxed font-light text-lg">Thumbnails using psychology-driven color theory to steal clicks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="deploy" class="py-32 md:py-40 px-6 bg-volt text-black border-t-8 border-black img-noise relative">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h2 class="heading-font text-[80px] md:text-[160px] leading-none mb-6 tracking-tight drop-shadow-[8px_8px_0px_#000] text-white">DEPLOY COMMAND</h2>
+            <p class="heading-font text-3xl md:text-4xl mb-20 normal-case text-black bg-white inline-block px-6 py-2 border-4 border-black font-bold rotate-[-2deg]">Stop wasting your potential. Force engagement now.</p>
+            
+            <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                <a href="https://wa.me/916291789701" target="_blank" class="w-full md:flex-1 brutal-card bg-black text-white px-8 py-10 text-center group hover:bg-black brutal-btn transition-all duration-300 transform">
+                    <p class="heading-font text-volt text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">SECURE LINE </p>
+                    <p class="font-bold text-xl md:text-2xl tracking-widest normal-case text-gray-400 group-hover:text-white transition-colors">WHATSAPP</p>
+                </a>
+                
+                 <a href="mailto:yuvraj.visuals.co@gmail.com" class="w-full md:flex-1 brutal-card bg-white text-black px-8 py-10 text-center group hover:bg-white brutal-btn transition-all duration-300 transform">
+                    <p class="heading-font text-crimson text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">MY EMAIL </p>
+                    <p class="font-bold text-lg md:text-xl tracking-widest normal-case text-gray-600 group-hover:text-black transition-colors">yuvraj.visuals.co@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-black text-center border-t-4 border-volt">
+        <div class="heading-font text-4xl text-white/20 mb-4 tracking-[0.2em]">YUVRAJ VISUALS</div>
+        <p class="text-gray-500 font-light uppercase tracking-[0.3em] text-xs md:text-sm">
+            &copy; 2026 // RETENTION WARRIOR // SYSTEM ONLINE
+        </p>
+    </footer>
+
+    <script>
+        // Smooth Intersection Observer for Reveals
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Video Hover Auto-play Logic (Kept exactly as requested)
+        document.querySelectorAll('.bento-card video').forEach(video => {
+            const card = video.closest('.bento-card');
+            if (video) {
+                card.addEventListener('mouseenter', () => {
+                    video.play().catch(e => console.log("Auto-play prevented"));
+                });
+                card.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0; // Added reset for cleaner UX
+                });
+            }
+        });
+    </script>
+</body>
+</html>
